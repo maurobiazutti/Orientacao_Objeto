@@ -42,6 +42,7 @@ conta_mauro = Conta.new(011, cli_mauro, 1000)
 conta_marcos = Conta.new(012, cli_marcos, 1000)
 
 conta_mauro.transferir(conta_marcos, 1000)
+conta_marcos.transferir(conta_mauro, 100)
 
 puts conta_mauro.saldo
 puts conta_marcos.saldo
